@@ -22,6 +22,7 @@
     font-size: var(--primary-font-size);
     color: var(--primary-color);
     font-family: var(--primary-font-style);
+    text-transform: capitalize;
 }
 
 .section-subtitle {
@@ -50,6 +51,10 @@
     margin-bottom: 2.5rem;
 }
 
+.menubar {
+    display: none;
+}
+
 .header-title {
     font-size: 1rem;
     font-family: var(--primary-font-style);
@@ -60,6 +65,7 @@
 
 .hero-content {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .image-cover {
@@ -109,6 +115,68 @@
 .btn-text {
     padding-right: 0.4rem;
 }
+
+/* header style for large devices */
+@media screen and (min-width: 992px) {
+
+    .menubar {
+        display: contents;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .shop-icon {
+        display: flex;
+    }
+
+    .menubar ul {
+        list-style: none;
+    }
+
+    .menubar ul li {
+        display: inline;
+    }
+
+    .menubar ul li a {
+        text-decoration: none;
+        color: rgb(58, 58, 58);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 600;
+        padding-right: 1.2rem;
+        text-transform: capitalize;
+    }
+
+    .shop {
+        padding-top: 1.2rem;
+    }
+
+    .header-title {
+        padding-top: 1rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .image-cover {
+        width: 50%;
+    }
+
+    .hero-texts {
+        width: 50%;
+        text-align: left;
+        padding-right: 15%;
+    }
+
+    .hero-subtitle {
+        padding-left: 0;
+    }
+}
+
 /* main section style */
 
 /* footer section style */
