@@ -11,9 +11,11 @@
 :root {
     --primary-font-size: 1.75rem;
     --secondary-font-size: 0.875rem;
+    --reuseable-font-size: 1.2rem;
     --primary-font-style: Poppins;
     --secondary-font-style: Inter;
     --primary-color: rgb(24, 25, 31);
+    --secondary-color: rgb(120, 120, 133);
     --primary-background-color: rgb(224, 44, 109);
 }
 
@@ -27,7 +29,10 @@
 
 .section-subtitle {
     font-size: var(--secondary-font-size);
-    font-family: var(--primary-font-style);
+    font-family: var(--secondary-font-style);
+    color: var(--secondary-color);
+    padding-right: 4rem;
+    margin-top: 0;
 }
 
 .margin-top {
@@ -40,6 +45,12 @@
 
 .container {
     max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.secondary-container {
+    max-width: 1110px;
     width: 100%;
     margin: 0 auto;
 }
@@ -114,6 +125,87 @@
 
 .btn-text {
     padding-right: 0.4rem;
+}
+
+/* main section styles */
+
+/* website section */
+.websites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.4rem;
+    margin-bottom: 3rem;
+}
+
+.websites img {
+    width: calc(25% - 1.4rem);
+    gap: 1.4rem;
+}
+
+/* collection section style */
+.collection-container {
+    text-align: center;
+}
+
+.collection-title {
+    font-size: 1rem;
+    font-family: var(--primary-font-style);
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    text-transform: capitalize;
+}
+
+.card {
+    margin: 0.8rem 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.flex-subtitle {
+    font-size: var(--reuseable-font-size);
+    color: rgba(0, 0, 0, 0.87);
+    font-style: var(--secondary-font-style);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-texts {
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.stars {
+    display: flex;
+}
+
+.stars i {
+    color: orange;
+}
+
+.stars p {
+    margin-top: 0px;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    color: rgb(94, 99, 102);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: end;
+}
+
+.see-more-btn {
+    color: var(--primary-background-color);
+    font-size: 1rem;
+    font-family: var(--primary-font-style);
+    font-weight: 700;
+}
+
+.arrow-padding {
+    padding-top: 0.2rem;
+    color: var(--primary-background-color);
 }
 
 /* header style for large devices */
