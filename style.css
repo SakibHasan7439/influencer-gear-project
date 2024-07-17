@@ -254,6 +254,7 @@
     width: 100%;
 }
 
+
 /* header style for large devices */
 @media screen and (min-width: 992px) {
 
@@ -341,9 +342,29 @@
     .btn-container {
         padding-right: 0.7rem;
     }
+
+    /* featured products section for large device */
+    .featured-products {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 4rem;
+        text-align: left;
+    }
+
+    .featured-info {
+        width: calc(50% - 4rem);
+    }
+
+    .featured-products img {
+        width: 50%;
+    }
+
+    .featured-description {
+        padding-left: 0px;
+    }
 }
 
-   /* collection section style for large device */
+   /* collection section style for medium device */
    @media screen and (min-width: 577px) and (max-width: 991px) {
 
     .collection {
@@ -357,8 +378,11 @@
             width: calc(50% - 1rem);
             margin: 0px;
         }
-   }
 
-/* main section style */
+        .btn-container {
+            display: block;
+            padding-top: 1rem;
+        }
+   }
 
 /* footer section style */
