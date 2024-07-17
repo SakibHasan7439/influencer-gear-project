@@ -17,6 +17,7 @@
     --primary-color: rgb(24, 25, 31);
     --secondary-color: rgb(120, 120, 133);
     --primary-background-color: rgb(224, 44, 109);
+    --footer-background-color: rgb(10, 8, 38);
 }
 
 /* sharing styles */
@@ -254,6 +255,43 @@
     width: 100%;
 }
 
+footer {
+    background-color: var(--footer-background-color);
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.footer-title {
+    color: rgb(255, 255, 255);
+    font-family: var(--primary-font-style);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-subtitle {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    margin-top: 0px;
+}
+
+span {
+    display: block;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-icons i {
+    color: #ffffff;
+}
+
+/* @media query starts from here for desktop and tablets */
 
 /* header style for large devices */
 @media screen and (min-width: 992px) {
