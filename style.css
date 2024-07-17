@@ -76,7 +76,7 @@
 
 .hero-content {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .image-cover {
@@ -146,6 +146,7 @@
 /* collection section style */
 .collection-container {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .collection-title {
@@ -201,11 +202,56 @@
     font-size: 1rem;
     font-family: var(--primary-font-style);
     font-weight: 700;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
 .arrow-padding {
     padding-top: 0.2rem;
     color: var(--primary-background-color);
+}
+
+/* featured-products section style */
+.featured-products {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.featured-info {
+    margin-bottom: 3rem;
+}
+
+.featured-description {
+    color: rgb(108, 108, 108);
+    font-family: var(--primary-font-style);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0 2rem;
+}
+
+.featured-btn {
+    background-color: var(--primary-background-color);
+    border: none;
+    padding: 0.6rem 1.5rem;
+}
+
+.featured-btn a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: var(--primary-font-style);
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.arrow-position {
+    padding-top: 0.4rem;
+    padding-left: 0.8rem;
+}
+
+.featured-products img {
+    width: 100%;
 }
 
 /* header style for large devices */
@@ -267,7 +313,51 @@
     .hero-subtitle {
         padding-left: 0;
     }
+
+    /* website section for large device */
+    .websites {
+        flex-wrap: nowrap;
+        gap: 1.4rem;
+        margin-bottom: 6rem;
+    }
+
+    .websites img {
+        width: calc(14.28% - 1.4rem);
+    }
+
+    /* collection section style for large device */
+    .collection {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        max-width: calc(33% - 1rem);
+        margin: 0px;
+    }
+
+    .btn-container {
+        padding-right: 0.7rem;
+    }
 }
+
+   /* collection section style for large device */
+   @media screen and (min-width: 577px) and (max-width: 991px) {
+
+    .collection {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        .card {
+            width: calc(50% - 1rem);
+            margin: 0px;
+        }
+   }
 
 /* main section style */
 
